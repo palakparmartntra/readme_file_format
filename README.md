@@ -1,4 +1,4 @@
-## Sunrise Diamond Project ( backend part )
+## Sunrise Diamond Project ( Backend Part )
 > Outline a brief description of your project.project description of sunrise diamond which is en erp platform that we build in ddd architecture.
 
 ## Table of contents
@@ -57,25 +57,27 @@ Folder structure
 
     Adapter is for any third party service like db message broker , apis ,generators etc.
 
-### infrastructure
+### Infrastructure
 
     This part of project is for framework or web service you want to user to deploy your business app and also in shared folder you need to configure dependencies injector for using our modules in web service
 
-### modules
+### Modules
 
     It is used to write client specific modules.Some configuration and plugins I used, to make the application itself cleaner.
     each module have readme file for understand that module.
     for understand the module you have visit their readme file
 
-### tests
+### Tests
 
     This folder will be used to run testcases for adapters, infrastructure and modules to test every folder,
 
-### requirements.txt
-    this files contains over all application requirement lib.
+### Requirements.txt
 
-### setup.py
-    for setup whloe project.
+    This files contains over all application requirement lib.
+
+### Setup.py
+
+    It will install
 
 ## Project setup guide
 
@@ -107,7 +109,7 @@ Folder structure
 
 
 
-## Third party tools
+## Third Party Tools
 
 - [Injector](https://github.com/alecthomas/injector)
 - [pypika](https://pypika.readthedocs.io/en/latest/)
