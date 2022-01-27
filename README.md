@@ -77,7 +77,7 @@ Folder structure
 
 ### Setup.py
 
-    It will install
+    It will install all requirements of this project.
 
 ## Project setup guide
 
