@@ -57,11 +57,7 @@ Module-folder structure
 
 ### setup.py
 
-for setup this module.
+for setup of this module.
 
-
-## module setup guide
-
-here, you can specify every step of setup this module or use this module.
 
 
