@@ -1,5 +1,5 @@
 ## Sunrise Diamond Project ( Backend Part )
-> Outline a brief description of your project.project description of sunrise diamond which is en erp platform that we build in ddd architecture.
+> Outline a brief description of your project. Project description of sunrise diamond which is en erp platform that we build in ddd architecture.
 
 ## Table of contents
 * [Technologies](#technologies)
@@ -11,6 +11,7 @@
 ## Technologies
 
 * django rest framework
+* flask rest framework
 * ddd architecture 
 * postgres
 
@@ -50,16 +51,17 @@ Folder structure
 --------
 
 
-## Folder description
+## Folder Description
 
 
 ### Adapters
 
-    Adapter is for any third party service like db message broker , apis ,generators etc.
+    Adapter is for any third party service like db message broker , apis ,generators etc. and in this folder we can define db configuaraton, celery etc. 
 
 ### Infrastructure
 
     This part of project is for framework or web service you want to user to deploy your business app and also in shared folder you need to configure dependencies injector for using our modules in web service
+    in this folder,we can define frameworks, apps etc.
 
 ### Modules
 
@@ -79,7 +81,7 @@ Folder structure
 
     It will install all requirements of this project.
 
-## Project setup guide
+## Project Setup Guide
 
 #### 1. Clone  the repo
 
@@ -111,8 +113,11 @@ Folder structure
 
 ## Third Party Tools
 
-- [Injector](https://github.com/alecthomas/injector)
+- [Pinject](https://github.com/google/pinject)
+  - Pinject is a [dependency injection](https://www.tutorialsteacher.com/ioc/dependency-injection) library for a python.
 - [pypika](https://pypika.readthedocs.io/en/latest/)
+  - pypika is a Python API for building SQL queries. 
 - [SQLAlchemy](https://www.sqlalchemy.org/)
+  - SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL.
 
  

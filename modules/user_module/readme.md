@@ -1,12 +1,12 @@
-## Module Description (ex. user module)
-Outline a brief description of your module. user module is the module of handling user relation all the opration.
+## User module)
+User module is the module of handling user related all the operations.
 
-Module-folder structure
+User Module Structure
 ------------
 
     ├── README.md         
     ├── bussiness
-    │   ├── module name
+    │   ├── user_module
     │   │   ├── DTOs
     │   │   ├── entities
     │   │   ├── exceptions
@@ -36,10 +36,10 @@ Module-folder structure
 
 --------
 
-## Module-folder description
+## Module-Folder Description
 
 ### Business
->module_name
+>user_module
 >> This folder is for modules of business logic that includes modules exceptions DTOs, entities, exceptions, services, value objects etc.
 >> Some configuration and plugins to make the application itself cleaner.
 
@@ -47,17 +47,17 @@ Module-folder structure
 
 > It is used to write client specific modules entities, mixins,validators etc.
 
-### infrastructure
+### Infrastructure
 
 > This part of project is for framework or web service you want to user to deploy your business app and also in shared folder you need to configure dependencies injector for using our modules in web service.
 
-### tests
+### Tests
 
 >This folder will be used to run testcases for business, enterprise and infrastructure to test every module combined.
 
 ### setup.py
 
-for setup of this module.
+>It will install all requirements of this module. 
 
 
 
