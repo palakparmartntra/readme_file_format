@@ -6,7 +6,7 @@
 * [Folder structure](#folder-structure)
 * [Folder description](#folder-description)
 * [Project setup guide](#project-setup-guide)
-* [Third party tools](#third-party-tools)
+* [Dependencies](#Dependencies)
 
 ## Technologies
 
@@ -109,7 +109,7 @@ Folder structure
 
 
 
-## Third Party Tools
+## Dependencies
 
 - [Injector](https://github.com/alecthomas/injector)
 - [pypika](https://pypika.readthedocs.io/en/latest/)
