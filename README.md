@@ -6,7 +6,7 @@
 * [Folder structure](#folder-structure)
 * [Folder description](#folder-description)
 * [Project setup guide](#project-setup-guide)
-* [Third party tools](#third-party-tools)
+* [Dependencies](#Dependencies)
 
 ## Technologies
 
@@ -111,7 +111,7 @@ Folder structure
 
 
 
-## Third Party Tools
+## Dependencies
 
 - [Pinject](https://github.com/google/pinject)
   - Pinject is a [dependency injection](https://www.tutorialsteacher.com/ioc/dependency-injection) library for a python.
