@@ -115,7 +115,7 @@ Folder structure
 
 - [Pinject](https://github.com/google/pinject)
   - Pinject is a [dependency injection](https://www.tutorialsteacher.com/ioc/dependency-injection) library for a python.
-- [pypika](https://pypika.readthedocs.io/en/latest/)
+- [Pypika](https://pypika.readthedocs.io/en/latest/)
   - pypika is a Python API for building SQL queries. 
 - [SQLAlchemy](https://www.sqlalchemy.org/)
   - SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL.
