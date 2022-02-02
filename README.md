@@ -105,9 +105,17 @@ Folder structure
  | db_password   | No       |               |
  | db_driver     | No       | postgresql    |
 
-#### 5. Run migrations and start the server
+#### 4. Run migrations and start the server
 
     python ./infrastructure/djangopoc/manage.py makemigrations && python ./infrastructure/djangopoc/manage.py migrate && python ./infrastructure/djangopoc/manage.py runserver
+
+#### How to run testcases
+- For testcases, we are using [pytest](https://docs.pytest.org/en/stable/).
+
+
+- Run command to test testcases file.
+
+      pytest ./path_to_file/test_file_name.py
 
 
 ## Dependencies
