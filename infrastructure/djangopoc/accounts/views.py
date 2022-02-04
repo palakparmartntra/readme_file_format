@@ -25,3 +25,31 @@ def register(request):
         )
         create_user = user.register(dto)
         return Response(create_user)
+
+
+@api_view(["POST"])
+def login(request):
+    """
+    for login
+    """
+    if request.method == "POST":
+        user = obj_graph.provide(UserService)
+        print(user)
+        dto = UserDto(
+            username=request.data["username"], first_name=None,
+            last_name=None, email=None, birthdate=None,
+            gender=None, password=request.data['password']
+        )
+        login_u = user.login_user(dto)
+        return Response(login_u)
+
+
+@api_view(["GET"])
+def user_list(request):
+    """
+        for list of users.
+    """
+    if request.method == "GET":
+        users = obj_graph.provide(UserService)
+        users_list = users.get_users()
+        return Response(users_list)
