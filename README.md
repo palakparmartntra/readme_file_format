@@ -112,7 +112,6 @@ Folder structure
 #### How to run testcases
 - For testcases, we are using [pytest](https://docs.pytest.org/en/stable/).
 
-
 - Run command to test testcases file.
 
       pytest ./path_to_file/test_file_name.py
