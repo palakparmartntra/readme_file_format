@@ -2,10 +2,10 @@ from adapters.db_adapters.db_query import QueryExecuter
 from pypika import Table, PostgreSQLQuery
 from modules.user_module.business.user_module.Dtos.user_dto import UserDto
 from adapters.db_adapters.db_exeptions import CustomExeption
-from typing import List
+from typing import List, Set
 
 
-class  UserService:
+class UserService:
     def __init__(self, query: QueryExecuter):
         """
 
@@ -35,5 +35,17 @@ class  UserService:
     def get_users(self) -> List[UserDto]:
         """ get users list """
         table = self.Table("accounts_user")
-        q = self.Query.from_(table).select("*")
+        q = self.Query.from_(table).select("*").where(table.username == 'shlokp')
         return self.query.execute(q.get_sql())
+
+    def login_user(self, data: UserDto) -> Set[str]:
+        """ for login """
+        table = self.Table("accounts_user")
+        q = self.Query.from_(table).select(table.username, table.password)
+        a = self.query.execute(q.get_sql())
+        b = a.fetchone()
+        try:
+            if b.username == data.username and b.password == data.password:
+                return {" login successfully."}
+        except CustomExeption:
+            return {" your credentials are not valid."}
